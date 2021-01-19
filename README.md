@@ -40,7 +40,7 @@ The real time prediction engine is powered by _AWS Lambda_, which can be fount i
 
 ## API REST
 
-The exposure of the predictive functions was made with _AWS ApiGateway_ 
+The exposure of the predictive functions was made with _AWS ApiGateway_
 
 ## Data science workflow
 
@@ -61,3 +61,11 @@ DDL script for the database scheme creation can be found in the [database](../-/
 ### Er diagram
 
 ![image info](./assets/er_diagram.jpeg)
+
+## DS4A - TEAM 81
+
+Alejandro Zabala, Elias Abril, Fabio Parra, Oscar Ramirez, Roberto Vargas, William Garcia
+
+Project presented in Data Science 4All program (2020), winner in Best Overall Category.
+
+![image info](./assets/Winner.png)
