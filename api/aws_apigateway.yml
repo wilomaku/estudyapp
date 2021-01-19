@@ -1,0 +1,55 @@
+openapi: "3.0.1"
+info:
+  title: "ds4a-saberpro-apigateway"
+  version: "2020-07-31 04:20:40UTC"
+servers:
+- url: "https://tawh41m124.execute-api.us-east-1.amazonaws.com/{basePath}"
+  variables:
+    basePath:
+      default: ""
+paths:
+  /getFeatures:
+    post:
+      responses:
+        default:
+          description: "Default response for POST /getFeatures"
+      x-amazon-apigateway-integration:
+        payloadFormatVersion: "2.0"
+        type: "aws_proxy"
+        httpMethod: "POST"
+        uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:947477774388:function:ds4a-saberpro-predict-serverless/invocations"
+        connectionType: "INTERNET"
+  /predictLinear:
+    post:
+      responses:
+        default:
+          description: "Default response for POST /predictLinear"
+      x-amazon-apigateway-integration:
+        payloadFormatVersion: "2.0"
+        type: "aws_proxy"
+        httpMethod: "POST"
+        uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:947477774388:function:ds4a-saberpro-predict-serverless/invocations"
+        connectionType: "INTERNET"
+  /predictXgboost:
+    post:
+      responses:
+        default:
+          description: "Default response for POST /predictXgboost"
+      x-amazon-apigateway-integration:
+        payloadFormatVersion: "2.0"
+        type: "aws_proxy"
+        httpMethod: "POST"
+        uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:947477774388:function:ds4a-saberpro-predict-serverless/invocations"
+        connectionType: "INTERNET"
+x-amazon-apigateway-cors:
+  allowMethods:
+  - "*"
+  allowHeaders:
+  - "*"
+  exposeHeaders:
+  - "*"
+  maxAge: 0
+  allowCredentials: false
+  allowOrigins:
+  - "*"
+x-amazon-apigateway-importexport-version: "1.0"
