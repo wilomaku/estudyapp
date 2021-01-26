@@ -64,7 +64,7 @@ DDL script for the database scheme creation can be found in the [database](../-/
 
 ## DS4A - TEAM 81
 
-Alejandro Zabala, Elias Abril, Fabio Parra, Oscar Ramirez, Roberto Vargas, William Garcia
+Alejandro Zabala, Elias Abril, Fabio Parra, Oscar Ramirez, Roberto Vargas, William Garcia.
 
 Project presented in Data Science 4All program (2020), winner in Best Overall Category.
 
